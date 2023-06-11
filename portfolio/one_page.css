@@ -1,0 +1,818 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+img,
+video {
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* h1 {
+  font-family: termina, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  margin-bottom: -11px;
+  padding-left: 47px;
+}
+
+.dore {
+  font-family: ivymode, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: #d5bc89;
+  font-size: 40px;
+  padding-left: 136px;
+} */
+
+.p_titre {
+  margin-bottom: 25px;
+}
+
+.trigger {
+  display: none;
+}
+
+.an {
+  font-size: 28px;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #d5bc89;
+}
+
+h3 {
+  font-family: termina, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  color: black;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  color: #6a6a6a;
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: black;
+  padding: 20px;
+}
+
+h4 {
+  font-family: termina, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 42px;
+  color: black;
+  text-align: center;
+  padding-bottom: 38px;
+}
+
+.titre_bio {
+  font-family: ivymode, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: #d5bc89;
+  font-size: 90px;
+  padding-left: 20px;
+}
+
+/* .bio_p2 {
+  padding-top: 187px;
+  padding-left: 100px;
+} */
+
+.biographie {
+  margin-bottom: 200px;
+}
+
+.titre_footer {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: black;
+}
+.footer_2 {
+  border-top: 0.2px solid #707070;
+}
+.lien footer > a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  max-width: 1355px;
+  justify-content: space-between;
+  margin: auto;
+  padding: 20px;
+  /* text-align: center; */
+  align-items: center;
+}
+.un,
+.deux,
+.trois {
+  padding: 0 25px;
+}
+
+.footer_2 {
+  margin-top: 20px;
+}
+/* header */
+
+.txt_menu > a:hover {
+  color: #d5bc89;
+}
+
+.txt_menu > a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  color: #000000;
+  padding: 20px 10px;
+
+  /* text-align: center; */
+}
+
+.txt_menu {
+  display: flex;
+  justify-content: space-between;
+  width: 382px;
+}
+
+.logo {
+  z-index: 20;
+}
+
+.logo > a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  color: #000000;
+}
+
+nav {
+  position: fixed;
+  background-color: white;
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  width: 100%;
+  z-index: 1;
+}
+/* .a_c {
+  max-width: 1150px;
+  margin: auto;
+  padding-bottom: 265px;
+  padding-top: 170px;
+  padding-left: 40px;
+  padding-right: 40px;
+} */
+
+.a_c {
+  max-width: 1284px;
+  margin: auto;
+  padding-bottom: 148px;
+  padding-top: 219px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.a_p > img:last-child {
+  display: none;
+}
+
+header {
+  margin-bottom: 58px;
+}
+.info_2d,
+.info_3d,
+.web_d {
+  max-width: 1340px;
+  margin: auto;
+  padding-bottom: 110px;
+  padding-top: 227px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* section 1 */
+
+/* .titre_projet {
+  max-width: 1023px;
+  margin: auto;
+  margin-bottom: 45px;
+}
+.titre_projet_web {
+  max-width: 1023px;
+  margin: auto;
+  margin-bottom: 45px;
+} */
+
+.titre_4a {
+  margin: auto;
+  padding-bottom: 18px;
+  max-width: 854px;
+  text-align: center;
+}
+
+h1 {
+  font-family: termina, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+  margin-bottom: 36px;
+  /* margin-top: 100px; */
+  margin-top: 115px;
+}
+.dore {
+  font-family: ivymode, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: #d5bc89;
+  font-size: 68px;
+}
+
+/* Biographie */
+
+.bio {
+  display: flex;
+  max-width: 1310px;
+  margin: auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.bio > div {
+  width: calc(100% * 1 / 2);
+  /* padding: 8px 8px; */
+  margin-top: 20px;
+  /* padding: 0 20px; */
+}
+
+.titre_1_bio {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6a6a6a;
+  padding-bottom: 11px;
+}
+
+.bio_p2 {
+  padding-top: 190px;
+  padding-left: 80px;
+}
+
+.titre_2_bio {
+  font-family: termina, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 26px;
+  color: #000000;
+  padding-bottom: 35px;
+}
+
+.texte_bio {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #6a6a6a;
+  line-height: 22px;
+}
+
+/* .lien_cv{
+  
+} */
+
+/* Filtre */
+
+/* .filtre {
+  margin-bottom: 30px;
+} */
+
+.filtre a.active {
+  /* font-weight: bold; */
+  color: #d5bc89;
+}
+
+.filtre > a {
+  font-family: termina, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 17px;
+  padding: 0 28px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.filtre {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Effet Zoom - mosaique */
+
+/* .hover01 figure img {
+  transform: scale(1);
+  transition: .3s ease-in-out;
+} */
+.hover01 figure:hover img {
+  transform: scale(1.3);
+}
+
+.mosaique > div > ul > li > a > div > img,
+.mosaique_web > div > ul > li > a > div > img {
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+  filter: contrast(80%);
+  transition: 0.3s ease-in-out;
+}
+
+.mosaique > div > ul > li > a > div > img:hover,
+.mosaique_web > div > ul > li > a > div > img:hover {
+  transform: scale(1.3);
+  filter: contrast(100%);
+}
+
+.mosaique > div > ul > li > a > div,
+.mosaique_web > div > ul > li > a > div {
+  overflow: hidden;
+}
+/* Mosaique */
+
+.mosaique {
+  display: flex;
+  max-width: 950px;
+  margin: auto;
+  justify-content: space-between;
+  padding: 0 40px 0;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+/* .mosaique_web>div{
+  z-index: -1;
+} */
+.mosaique > div {
+  width: calc(100% * 1 / 3);
+  padding: 8px 8px;
+  margin-top: 20px;
+  /* z-index: -1; */
+}
+.mosaique_web {
+  display: flex;
+  max-width: 950px;
+  /* max-width: 830px; */
+  margin: auto;
+  justify-content: space-between;
+  padding: 0 40px 0;
+  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
+}
+
+.mosaique_web li {
+  list-style: none;
+}
+
+.mosaique_web li {
+  transition: opacity 0.2s ease-in-out;
+}
+
+.mosaique_web li.inactive {
+  opacity: 0.3;
+}
+
+.mosaique_web > div {
+  width: calc(100% * 1 / 3);
+  padding: 8px 8px;
+}
+a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: black;
+}
+
+.footer > a:hover {
+  color: #d5bc89;
+}
+
+/* Mosaique - rectangle*/
+
+.txt_som {
+  text-align: center;
+  /* padding: 30px 0; */
+  padding: 13px 0 30px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  padding-bottom: 10px;
+}
+
+h3 {
+  padding-bottom: 10px;
+}
+
+/* tablette 950px */
+
+@media (max-width: 950px) {
+  .bio_p2 {
+    padding-top: 50px;
+    padding-left: 0;
+  }
+
+  .burger > div {
+    width: 36px;
+    height: 4px;
+    background: black;
+    margin-bottom: 7px;
+    /* border-radius: 6px; */
+    transition: all 0.5s ease-in;
+  }
+
+  .filtre {
+    display: none;
+  }
+
+  .burger > div:nth-child(3) {
+    margin-bottom: 0;
+  }
+
+  .burger,
+  .trigger {
+    position: fixed;
+    top: 18px;
+    right: 50px;
+    display: block;
+    margin: 0;
+    z-index: 11;
+  }
+  /* Le trigger est un input qu'on a placé devant le burger qui sera cliqué quand l'user clique sur le burger: il a la meme taille */
+  .trigger {
+    z-index: 12;
+    width: 36px;
+    height: 26px;
+    opacity: 0;
+  }
+  /* Animation du burger */
+
+  .trigger:checked + .burger > div:nth-child(1) {
+    /* background-color: aqua; */
+    /* déplacer au milieu et tourner pour se mettre en diagonale: */
+    transform: translateY(11px) rotate(-45deg);
+  }
+  .trigger:checked + .burger > div:nth-child(2) {
+    /* background-color: chocolate; */
+    /* réduire l'échelle horizontale jusqu'a disparaitre */
+    transform: scale(0.2, 0);
+    opacity: 0;
+  }
+  .trigger:checked + .burger > div:nth-child(3) {
+    /* background-color: #46C; */
+    /* monter et pivoter */
+    transform: translateY(-11px) rotate(+45deg);
+  }
+  /* NAVIGATION */
+  .txt_menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(-100%);
+    transition: all 0.5s ease-in-out;
+    /* display: none;  */
+    /* n'affecte plus la nav */
+  }
+
+  .titre {
+    margin: auto;
+    padding-bottom: 44px;
+    max-width: 1360px;
+  }
+  .txt_menu {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+  }
+
+  .txt_menu > a {
+    padding: 20px 0;
+  }
+  /* .txt_menu > a:nth-child(1) {
+    border-top: 2px solid #ccc;
+  } */
+  .txt_menu > a:nth-child(2) {
+    border-left: 0;
+    border-right: 0;
+  }
+  /* .txt_menu > a:nth-child(3) {
+    border-bottom: 2px solid #ccc;
+  } */
+  .trigger:checked ~ nav > .txt_menu {
+    transform: none;
+  }
+
+  h1 {
+    margin-top: 53px;
+  }
+
+  header {
+    margin-bottom: 0px;
+  }
+
+  .a_c {
+    padding-bottom: 0px;
+  }
+
+  .info_2d,
+  .info_3d,
+  .web_d {
+    padding-bottom: 80px;
+    padding-top: 115px;
+  }
+
+  .mosaique > div,
+  .mosaique_web > div {
+    width: calc(100% * 1 / 2);
+    padding: 8px 8px;
+    /* z-index: -1; */
+  }
+
+  .range_3 {
+    display: none;
+  }
+
+  /* .bio {
+    display: none;
+    max-width: 1310px;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  } */
+  /* .bio>div{
+    width: 100%
+    padding: 8px 8px;
+    margin-top: 20px;
+  } */
+
+  .bio > div {
+    width: calc(80% * 2 / 2);
+    margin: auto;
+  }
+
+  .footer {
+    display: flex;
+    /* max-width: 1355px; */
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+
+  .footer > div > h5:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .biographie {
+    margin-top: 133px;
+    margin-bottom: 151px;
+  }
+
+  /* .fleche_haut{
+    margin: auto;
+    width: 38px;
+    height: 38px;
+  } */
+
+  /* .h_web_r{
+        display: none;
+    } */
+}
+
+/* tablette 650px */
+
+@media (max-width: 650px) {
+  .a_p > img:last-child {
+    display: block;
+  }
+  .a_p > img:first-child {
+    display: none;
+  }
+  .a_p {
+    padding-top: 130px;
+  }
+  h4 {
+    padding-top: 0px;
+  }
+  .bio {
+    padding: 20px 10px 0;
+  }
+
+  h4 {
+    font-size: 32px;
+    padding-top: 63px;
+  }
+  .titre_2_bio {
+    font-size: 23px;
+  }
+  .biographie {
+    margin-top: 17px;
+  }
+
+  .texte_bio {
+    line-height: 26px;
+  }
+
+  /* .biographie {
+    margin-top: 133px;
+  } */
+
+  a {
+    font-size: 13px;
+  }
+  h1 {
+    font-size: 27px;
+  }
+
+  .titre_2_bio {
+    line-height: 35px;
+  }
+  .titre_bio {
+    font-size: 67px;
+  }
+  .bio > div {
+    width: calc(100% * 2 / 2);
+  }
+  .mosaique_web > div {
+    width: 100%;
+    padding: 8px 8px;
+  }
+  .mosaique > div,
+  .mosaique_web > div {
+    width: calc(100% * 2 / 2);
+    padding: 8px 8px;
+    /* z-index: -1; */
+  }
+
+  .un,
+  .deux,
+  .trois {
+    padding: 0px 3px;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+}

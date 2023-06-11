@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objet</title>
+</head>
+<body>
+    <h1>Objet</h1>
+    <script>
+        // création d'un objet
+        var objet1 = {};
+
+        // création d'un objet pré-rempli
+        var objet2 = {
+            nom: 'Gérard',
+            pseudo: 'Gégé',
+            age: 73,
+            actif: false
+        };
+        console.log(objet2);
+
+        // accéder une propriété
+        objet2["nom"];
+        objet2.nom;
+
+        // modifier une propriété
+        objet2["nom"] = "Gérard Depardieu";
+
+        // ajouter une propriété
+        objet2["celibataire"] = false;
+
+        console.log(objet2);
+    </script>
+</body>
+</html>

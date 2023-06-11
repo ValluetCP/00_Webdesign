@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice</title>
+</head>
+<body>
+    <h1>Exercice</h1>
+    <script>
+        // 1. déclarer une variable "users" (array)
+        var users = [];
+
+        // 2. remplir ce tableau avec 3 objets (object)
+        /*
+        var objet1 = {},
+            objet2 = {},
+            objet3 = {};
+        users.push(objet1, objet2, objet3);
+        */
+
+        // 3. donner plusieurs propriétés à ces objets
+        //      - nom (string)
+        //      - pseudo (string)
+        //      - like (number)
+        //      - actif (boolean)
+        //      - date (null)
+        var objet1 = {
+                nom: 'Barnabé',
+                pseudo: 'nanar',
+                like: 1,
+                actif: true,
+                date: null
+            },
+            objet2 = {
+                nom: 'Paul',
+                pseudo: 'MarcoPolo',
+                like: 1,
+                actif: false,
+                date: null
+            },
+            objet3 = {
+                nom: 'Lukette',
+                pseudo: 'Skywalkeuse',
+                like: 1,
+                actif: true,
+                date: null
+            };
+        users.push(objet1, objet2, objet3);
+        console.log(users);
+
+        // 4. parcourir le tableau
+        /*
+        users.forEach(function(item){
+            console.log(item);
+        });
+        */
+
+        // 5. pour chaque élément
+        //      - vérifier si actif est vrai
+        /*
+        users.forEach(function(item){
+            // console.log(item["actif"]);
+            console.log(item.actif);
+            if (item.actif == true){
+                document.write('yo');
+            }
+        });
+        */
+
+        //      - dans ce cas, écrire toutes les propriétés de l'objet dans le document
+        users.forEach(function(item){
+            if (item.actif == true){
+                for(prop in item){
+                    document.write(prop, ': ', item[prop], '<br>');
+                }
+                document.write('<hr>');
+            }
+        });
+    </script>
+</body>
+</html>

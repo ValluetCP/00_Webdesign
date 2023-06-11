@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau</title>
+</head>
+<body>
+    <h1>Tableau</h1>
+    <script>
+        // création de tableau
+        var tableau1 = [];
+        console.log(tableau1);
+
+        // création de tableau pré-rempli
+        var tableau2 = ["hello", 123, "bonjour", true, [], {}, null];
+        console.log(tableau2);
+        document.write(tableau2);
+        
+        // copier un tableau
+        var copieTableau2 = tableau2.slice();
+        console.log(copieTableau2);
+
+        // accéder à la valeur d'un élément du tableau
+        var element3 = tableau2[2];
+        console.log(element3);
+
+        // ajouter un élément à la fin
+        tableau2.push('banane');
+        // ajouter un élément au début
+        tableau2.unshift('coriandre');
+        console.log(tableau2);
+        // retirer le dernier élément
+        tableau2.pop();
+        // retirer le premier élément
+        tableau2.shift();
+        console.log(tableau2);
+
+        // retirer un élément à un index spécifique
+        var indexCible = tableau2.indexOf('bonjour');
+        tableau2.splice(indexCible,2);
+        console.log(tableau2);
+
+        // parcourir un tableau
+        document.write('<hr>');
+        tableau2.forEach(function(item, index){
+            console.log(index, item);
+            document.write('*', index, ': ', item,'<br>');
+        });
+
+    </script>
+</body>
+</html>

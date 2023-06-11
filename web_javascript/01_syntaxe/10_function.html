@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <h1>Function</h1>
+    <script>
+        // fonction anonyme
+        /*
+        function(){
+
+        }
+        */
+
+        // fonction nommée
+        function maFonction(){
+            console.log('je passe dans ma fonction');
+            document.write('je passe dans ma fonction<br>');
+        }
+        maFonction();
+        maFonction();
+        maFonction();
+        maFonction();
+        maFonction();
+        
+        // fonction nommée avec arguments
+        function maFonctionAvecArguments(arg1, arg2 = '', arg3 = ''){
+            console.log(arg1, arg2, arg3);
+            document.write(arg1, arg2, arg3, '<br>');
+        }
+        maFonctionAvecArguments('bonsoir ', 'toi, ', "t'es fatigué ?");
+        maFonctionAvecArguments('YOOOOOOO');
+
+        // fonction nommée avec argument avec retour
+        function maFonctionRetour(nombre){
+            console.log(nombre);
+            return nombre * Math.PI - 47;
+        }
+        var resultat = maFonctionRetour(46);
+        console.log(resultat);
+        console.log(maFonctionRetour(1));
+        console.log(maFonctionRetour(5));
+
+        // EXEMPLE
+        // obtenir une NOMBRE Aléatoire entre 0 et N
+        function random(max){
+            return Math.round( Math.random() * max);
+        }
+        var result = random(10);
+        console.log('random', result);
+    </script>
+</body>
+</html>

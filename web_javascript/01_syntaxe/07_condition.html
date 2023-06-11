@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condition</title>
+</head>
+<body>
+    <h1>Condition</h1>
+    <script>
+        // if
+        var i = 1;
+        if(i < 7){
+            // si i < 7, je fais qqchose
+            console.log('i < 7');
+        }
+
+        // if else
+        if(i < 7){
+            // si i < 7, je fais qqchose
+            console.log('i < 7');
+        } else {
+            // sinon, je fais autre chose
+            console.log('autre chose');
+        }
+
+        // if else if else 
+        if(i < 7){
+            // si i < 7, je fais qqchose
+            console.log('i < 7');
+        } else if(i > 7) {
+            // si i > 7, je fais qqchose
+            console.log('i > 7');
+        } else {
+            // sinon, je fais autre chose
+            console.log('autre chose');
+        }
+
+        // switch
+        var taille = 38;
+        switch(taille){
+            case 36:
+                console.log("c'est du 36");
+                break;
+            case 37:
+            case 38:
+                console.log("c'est du 37 ou du 38");
+                break;
+            case 39:
+                console.log("c'est du 39");
+                break;
+            default:
+                console.log('cas par défaut');
+                break;
+        }
+        
+        // opérateur ternaire
+        var reponse = taille > 38 ? "Jean Nai en stock" : "Jean Naipat en stock";
+        console.log(reponse);
+
+        console.log(taille > 38 ? "vrai" : "faux");
+
+        taille > 38 ? console.log('OK') : document.write('taille > 38');
+    </script>
+</body>
+</html>

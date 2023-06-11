@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opérateurs</title>
+</head>
+<body>
+    <h1>Opérateurs</h1>
+    <script>
+        // affectation
+        var a;
+        a = 2;                      // = 2       // Affectation
+        a += 3; // a = a + 3;       // = 5       // Affectation après addition
+        a -= 3; // a = a - 3;       // = 2       // Affectation après soustraction
+        a *= 3; // a = a * 3;       // = 6       // Affectation après multiplication
+        a /= 3; // a = a / 3;       // = 2       // Affectation après division
+
+        // comparaison
+        var b = 6;
+        b == 6;     // true         // égalité
+        b == "6";   // true         // égalité
+        b != 6;     // false        // inégalité
+        b === 6;    // true         // égalité stricte
+        b === "6";  // false        // égalité stricte
+        b !== 6;    // false        // inégalité stricte
+        b !== "6";  // true         // inégalité stricte
+        /*
+        console.log(6 + 6 + Number("3"));
+        console.log(6 * "3");
+        console.log(6 - "3");
+        console.log(6 / "3");
+        console.log(6 * "aze");
+        */
+        b > 6;      // false        // supériorité stricte
+        b < 6;      // false        // infériorité stricte
+        b >= 6;     // true         // supériorité ou égal
+        b <= 6;     // true         // infériorité ou égal
+        /*
+        console.log("a" > "b");             // false
+        console.log("antoine" > "anthony"); // true
+        */
+
+        // arithmétique
+        var c = 52;
+        c + 7;      // 59           // addition
+        c - 8;      // 44           // soustraction
+        c * 8;      // 416          // multiplication
+        c / 13;     // 4            // division
+        
+        var d = 52;
+        d += 7;      // 59           // affection après addition
+        d -= 8;      // 51           // affection après soustraction
+        d *= 8;      // 408          // affection après multiplication
+        d /= 13;     // 31.384...    // affection après division
+
+        var e = 13;
+        e++;        // 14            // incrémentation
+        e--;        // 13            // décrémentation
+        e = e ** 13;// 302875106592253            // exponentiation
+
+        var f = 18;
+        f % 5;      // 3             // reste (modulo)
+        19 % 5;     // 4             // reste (modulo)
+        20 % 5;     // 0             // reste (modulo)
+        21 % 5;     // 1             // reste (modulo)
+        f % 6;      // 0             // reste (modulo)
+        f % 7;      // 4             // reste (modulo)
+
+        for (var i = 0; i<30; i++){
+            console.log(i + ' % 5 =',i % 5);
+        }
+
+        // logiques
+        // &&               // ET logique
+        true && true        // true
+        true && false       // false
+        false && false      // false
+        var g = 10;
+        g > 0 && g < 20     // true && true     // true
+        g > 0 && g < 10     // true && false    // false
+        g != 10 && g < 8    // false && false   // false
+
+        // ||               // OU logique
+        true || true        // true
+        true || false       // true
+        false || false      // false
+        g > 0 || g < 20     // true || true     // true
+        g > 0 || g < 10     // true || false    // true
+        g != 10 || g < 8    // false || false   // false
+
+        // !                // NON logique
+        true                // true
+        !true               // false
+        false               // false
+        !false              // true
+
+        var tableau = [];
+        if(!tableau){
+            console.log('tableau non existant');
+        }
+        if(!!tableau){
+            console.log('tableau existant');
+        }
+
+        // chaînes
+        var h = '';
+        console.log(h);
+        var userName = 'Bob';
+        h = 'Bonjour ' + userName;
+        console.log(h);
+        h += '! Comment vas-tu ?';
+        console.log(h);
+
+        // ternaire
+        var i = 46;
+        i != 32 ? 'différent de 32' : 'égal à 32';
+        var userAge = 16;
+        var estMajeur = userAge > 18 ? 'tu es majeur' : 'tu es mineur';
+        userAge > 18 ? document.write("catalogue d'alcool") : alert('appelle ta mère');
+        document.write(userAge > 18 ? "catalogue d'alcool" : 'appelle ta mère');
+
+        // virgule
+        var j = 3,
+            k = "aze",
+            l = true;
+
+        for(var m = 0, n = 0; m < 10; m++, n--){
+            console.log(m, n);
+        }
+        for(var o = 0, p = 0; o < 10 && p > -3; o++, p--){
+            console.log(o, p);
+        }
+
+        // typeof
+        // permet de vérifier le type d'une variable
+        var nondefinie;
+        // j'affiche nondefinie et son type
+        console.log(nondefinie, typeof(nondefinie));
+
+        var tab = ["apzoei", 123, true, [], {}, null];
+        // pour chaque item, 
+        tab.forEach(function(item){
+            // j'affiche mon item et son type
+            console.log(item, typeof(item));
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Répétition</title>
+</head>
+<body>
+    <h1>Répétition</h1>
+    <script>
+        var tableau = ["a", "b", "c", "r"];
+        // for
+        for(var i = 0; i < 4; i++){
+            // i = 0,
+            // tant que i est inférieur à 4, 
+            // j'ajoute 1 à i,
+            // et je fais quelque chose
+            console.log(i, tableau[i]);
+        }
+
+        // for in
+        var objet = {
+            nom: 'Gérard',
+            pseudo: 'Gégé',
+            age: 73,
+            actif: false
+        };
+        for(propriete in objet){
+            // pour chaque propriété de mon objet,
+            // je fais quelque chose
+            console.log(propriete, objet[propriete]);
+        }
+
+        // while
+        var n = 0;
+        while(n < 7){
+            // n = 0,
+            // tant que n < 7 est vrai
+            // je fais quelque chose 
+            console.log(n);
+            n++;
+        }
+
+        // do while
+        var x = 0;
+        // x = 0,
+        do{
+            // je fais quelque chose au moins une fois
+            console.log(x);
+            x++;
+        }
+        while(x < 1);
+        // tant que x < 1 est vrai
+    </script>
+</body>
+</html>
